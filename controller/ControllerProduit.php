@@ -303,6 +303,15 @@ class ControllerProduit {
        $produit->update($data);
   }
 
+    public static function searched(){
+        $tab = ModelProduit::search($_GET['data']);
+        $view = 'searched';
+        $pagetitle = 'Page de recherche';
+        require (File::build_path(array('view', 'view.php')));
+
+
+    }
+
 }
 
 // http://webinfo.iutmontp.univ-montp2.fr/~maurinn/eCommerce/index.php?action=connect&controller=utilisateur
