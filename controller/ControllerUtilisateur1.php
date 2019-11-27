@@ -331,18 +331,20 @@ class ControllerUtilisateur1 {
                     $u->save($data);
                         $destinataire = $_GET['emailUser'];
                         $sujet = 'Activer votre compte';
-                        $entete = 'From serviceclient@pineapple.com';
-                        $mail = 'Bienvenue sur PineApple,
+                        $entete = 'From serviceclient@smartyou.com';
+                        $mail = 'Bienvenue sur SmartYou,
                         
                         Pour activer votre compte, veuillez cliquer sur le lien-ci dessous ou 
                         copier/coller dans votre navigateur internet
 
-                        http://webinfo.iutmontp.univ-montp2.fr/~bourdesj/eCommerce/index.php?controller=utilisateur1&action=validate&loginUtilisateur='.rawurlencode($_GET['loginUtilisateur']).'&nonce='.rawurlencode($nonc).'
+                        http://webinfo.iutmontp.univ-montp2.fr/~maurinn/eCommerce/index.php?controller=utilisateur1&action=validate&loginUtilisateur='.rawurlencode($_GET['loginUtilisateur']).'&nonce='.rawurlencode($nonc).'
 
 
                         Ceci est un mail automatique, Merci de ne pas y répondre';
                         mail($destinataire, $sujet, $mail, $entete);
                         require (File::build_path(array('view', 'view.php')));
+
+                        http://webinfo.iutmontp.univ-montp2.fr/~prybysl/eCommerce/index.php?controller=utilisateur1&action=created&loginUtilisateur=l&nomUtilisateur=l&prenomUtilisateur=l&adresseFacturationUtilisateur=l&adresseLivraisonUtilisateur=l&passUtilisateur=l&vpassUtilisateur=l&emailUser=prybyslouis%40gmail.com
                 } else {
                     $type = 'Ajout';
                     $verif = 'Votre email n\'est pas valide !';
