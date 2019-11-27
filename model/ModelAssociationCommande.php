@@ -46,7 +46,7 @@ class ModelAssociationCommande extends Model{
    public static function selectByOrder() {
 
 
-            $sql = "SELECT A.idCommande, codeProduit, quantite, prixTotalPourProduit FROM ecommerce_associationCommande A JOIN ecommerce_commande C ON A.idCommande = C.idCommande WHERE loginUtilisateur=:userId AND C.idCommande=:commandeId ";
+            $sql = "SELECT A.idCommande, codeProduit, quantite, prixTotalPourProduit FROM associationCommande A JOIN commande C ON A.idCommande = C.idCommande WHERE loginUtilisateur=:userId AND C.idCommande=:commandeId ";
             // Préparation de la requête
             $req_prep = Model::$pdo->prepare($sql); //permet de protéger la requete SQL
            

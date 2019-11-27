@@ -48,7 +48,7 @@ class ModelCartesBleues extends Model{
 
     public static function selectByUser(){
 
-            $sql = "SELECT codeCarteBleue, loginUtilisateur, dateExp, cryptogramme, nomTitulaire FROM ecommerce_cartesBleues WHERE loginUtilisateur=:userId ";
+            $sql = "SELECT codeCarteBleue, loginUtilisateur, dateExp, cryptogramme, nomTitulaire FROM cartesBleues WHERE loginUtilisateur=:userId ";
             // Préparation de la requête
             $req_prep = Model::$pdo->prepare($sql); //permet de protéger la requete SQL
            
