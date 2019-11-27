@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<!--Hors de page-->
     	<link rel="icon" href="Images/logoananas.ico" />
 		<meta charset="utf-8">
