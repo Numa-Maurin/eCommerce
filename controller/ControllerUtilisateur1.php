@@ -258,7 +258,7 @@ class ControllerUtilisateur1 {
                         else if($u->get('typeUser') == 0){
                             $_SESSION['admin'] = false;
                         }
-                        $redirection = 'index.php?controller=utilisateur&action=read&loginUtilisateur='.$_GET['loginUtilisateur'].'';
+                        $redirection = 'index.php?controller=utilisateur1&action=read&loginUtilisateur='.$_GET['loginUtilisateur'].'';
                         header('Location: '.$redirection);
                     }
                     else {
