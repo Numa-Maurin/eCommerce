@@ -17,11 +17,11 @@
         <br>
         <label>Adresse de facturation:</label>
         <br>
-        <textarea name="adresseFacturationUtilisateur" placeholder="adresse Facturation Utilisateur" id="adresseFacturationUtilisateur_id" ></textarea>
+        <textarea name="adresseFacturationUtilisateur" placeholder="Adresse Facturation Utilisateur" id="adresseFacturationUtilisateur_id" ></textarea>
         <br>
         <label>Adresse de livraison:</label>
         <br>
-        <textarea name="adresseLivraisonUtilisateur" placeholder="adresse Livraison Utilisateur" id="adresseLivraisonUtilisateur_id" ></textarea>
+        <textarea name="adresseLivraisonUtilisateur" placeholder="Adresse Livraison Utilisateur" id="adresseLivraisonUtilisateur_id" ></textarea>
         <br>
         <input type="password" placeholder="Mot de passe" name="passUtilisateur" id="passUtilisateur_id" required/>
         <input type="password" placeholder="Confirmer le mot de passe" name="vpassUtilisateur" id="vpassUtilisateur_id" required/>

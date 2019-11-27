@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<!--Hors de page-->
     	<link rel="icon" href="Images/logoananas.ico" />
 		<meta charset="utf-8">
@@ -18,7 +23,7 @@
 		<header>
 			<nav> <!--Menu-->
 				<div class=menu_burger>
-					<a> <img src="./Images/logoananas.png " alt="Ca fonctionne pas nulos" id="logobg"></a>
+					<a> <img class = "responsive-img" src="./Images/Smartyou.png " alt="Ca fonctionne pas nulos" id="logobg"></a>
 					<div class="submenu_bg">
 						<div><a class=txt_sub href="index.php">Accueil</a></div>
 						<br>
@@ -47,7 +52,7 @@
 			
 
 				<div class=menu>
-					<a href="index.php"><img src="./Images/logoananas.png" alt="Ca fonctionne pas nulos" id="logo"></a>		
+					<a href="index.php"><img src="./Images/Smartyou.png" alt="Ca fonctionne pas nulos" id="logo"></a>
 
 					<?php 
 
@@ -100,7 +105,7 @@
 			<div class="FootBot">
 				<div class="FootBotC1">
 					<div>
-						<a> <img src="./Images/logoananas2.png" alt="Erreur 2ème logo" id="FootAnanas"></a>
+						<a> <img class = "responsive-img " src="./Images/Smartyou.png" alt="Erreur 2ème logo" id="FootAnanas"></a>
 					</div>
 				</div>
 				<div class="FootBotC2">
