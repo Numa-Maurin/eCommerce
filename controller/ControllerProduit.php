@@ -303,13 +303,14 @@ class ControllerProduit {
        $produit->update($data);
   }
 
-    public static function searched(){
-        $tab = ModelProduit::search($_GET['data']);
-        $view = 'searched';
-        $pagetitle = 'Page de recherche';
-        require (File::build_path(array('view', 'view.php')));
-
-
+    public static function search(){
+        if(isset($_GET['data'])){
+            $tab = ModelProduit::search($_GET['data']);
+            $error_code = 'problème';
+            $view = 'searched';
+            $pagetitle = 'Page de recherche';
+            require (File::build_path(array('view', 'view.php')));
+        }
     }
 
 }

@@ -84,7 +84,7 @@
 					}
 					?>
                     <form method="GET">
-                        <input type="hidden" name="action" value="searched"/>
+                        <input type="hidden" name="action" value="search"/>
                         <input type="search" name="data" placeholder="Recherche..."/>
                         <input type="submit" value="Valider" />
                     </form>
