@@ -303,20 +303,15 @@ class ControllerProduit {
        $produit->update($data);
   }
 
-  public static function searched(){
-    if (isset($_GET['nomProduit'])){
-        $p = ModelProduit::search($_GET['nomProduit']);
-        if ($p){
-            $error_code = 'Produits inexistants !';
+      public static function search(){
+        if(isset($_GET['data'])){
+            $tab = ModelProduit::search($_GET['data']);
+            $error_code = 'problème';
             $view = 'searched';
-            $pagetitle = 'Produits recherchés';
+            $pagetitle = 'Page de recherche';
             require (File::build_path(array('view', 'view.php')));
         }
     }
-
 }
-}
-
-// http://webinfo.iutmontp.univ-montp2.fr/~maurinn/eCommerce/index.php?action=connect&controller=utilisateur
 
 ?>

@@ -11,15 +11,6 @@ if(Session::is_admin()){
 
 <h1> Tous nos produits </h1>
 
-<div id="searchbar">
-    <form method="get" action="index.php" id="form">
-        
-        <input type="hidden" name="controller" value="produit"/>
-        <input type="hidden" name="action" value="searched"/>
-        <input type="text" placeholder="Nom du produit" name="nomProduit" id="nomProduit_id" required/>
-    </form>
-</div>
-
 <div class=responsive>
 <?php
 
