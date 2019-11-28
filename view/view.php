@@ -112,11 +112,6 @@
 					<h1>Apple, Samsung, Xiaomi...</h1>
 					<h5>Ils sont tous disponibles chez nous !!
 					</h5>
-					<a href="http://jigsaw.w3.org/css-validator/check/referer">
-						<img style="border:0;width:88px;height:31px"
-						src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-						alt="CSS Valide !" />
-					</a>
 
 				</div>
 			</div>

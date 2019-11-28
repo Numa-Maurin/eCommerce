@@ -148,7 +148,7 @@
             } */
         
           }
-
+          
           public static function save($data) {
             $table_name = static::$object;
             $name = static::$object;

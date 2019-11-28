@@ -33,16 +33,25 @@ class ModelProduit extends Model {
     $this->prixProduit = $data["prixProduit"];
     $this->descProduit=$data["descProduit"];
     $this->stockProduit=$data["stockProduit"];
-
   }
 }
 
+public static function search($value) {
+  $sql = "SELECT nomProduit FROM produit WHERE nomProduit LIKE "%'.:valeur.'%" ORDER BY codeProduit DESC";
+  $req_prep = Model::$pdo->prepare($sql);
+     
+  $values = array(
+                "valeur" => $value,
+            );
+  $req_prep->execute($values);
 
-
-
+  $rep_prep->setFetchMode(PDO::FETCH_CLASS, 'ModelProduit');
+  $tab_obj = $rep_prep->fetchAll();
+  return $tab_obj;
+  var_dump($sql);
+}
 
 
 }
-
 
 ?>

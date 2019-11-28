@@ -30,11 +30,7 @@ class ControllerCommande {
           $ac->save($data2);
 
           ControllerProduit::majStock($produit,$tab_produit[1]);
-
-
       }
-
-
   }
 
 
@@ -49,17 +45,12 @@ class ControllerCommande {
                    if($commande->get('loginUtilisateur')===$loginUser){
     
                        array_push($tab_c, $commande);
-    
                    }
-
             }
     
             $view = 'historique';
             $pagetitle = 'Historique de vos commandes';
             require (File::build_path(array('view', 'view.php')));
-    
-
-    
   }
 
 
@@ -91,7 +82,6 @@ class ControllerCommande {
                     $pagetitle = 'Erreur';
                     require (File::build_path(array('view', 'error.php')));
                 }     
-
     }
 
  
@@ -102,7 +92,6 @@ class ControllerCommande {
         $view = "passerCommande";
         $pagetitle = "Passer votre commande";
         require (File::build_path(array('view', 'view.php')));
-
     }
 
     public static function validerCommande(){
@@ -114,21 +103,7 @@ class ControllerCommande {
       require (File::build_path(array('view', 'view.php')));
 
       setcookie("produits_panier",0,time()-1); //Faire expirer le cookie
-
-
    }
 
-
-
-
-
 }
-
-
-
-
-
-
-
-
 ?>

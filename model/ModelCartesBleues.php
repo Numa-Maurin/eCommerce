@@ -37,14 +37,8 @@ class ModelCartesBleues extends Model{
         	$this->dateExp=$data['dateExp'];
         	$this->cryptogramme=$data['cryptogramme'];
         	$this->nomTitulaire=$data['nomTitulaire'];
-
         } 
-
-
-
     }
-
-
 
     public static function selectByUser(){
 

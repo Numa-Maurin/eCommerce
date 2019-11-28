@@ -93,24 +93,8 @@ class ControllerCartesBleues {
 			$pagetitle = "Erreur";
 			$error_code = "Delete: permission refusée";
 			require (File::build_path(array('view', 'error.php')));
-
-
 		}
 
-
-
 	}
-
-
-
-
-
-
-
-
-
 }
-
-
-
 ?>
