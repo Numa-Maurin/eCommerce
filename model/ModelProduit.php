@@ -36,9 +36,10 @@ class ModelProduit extends Model {
   }
 }
 
-    public static function search($data){
-        $sql = "SELECT * FROM produit WHERE nomProduit LIKE :nom_tag OR prixProduit LIKE :nom_tag ORDER BY codeProduit DESC";
+public static function search($data){
+        $sql = "SELECT nomProduit,codeProduit,prixProduit FROM produit WHERE nomProduit LIKE :nom_tag OR prixProduit LIKE :nom_tag ORDER BY codeProduit DESC";
         $req_prep = Model::$pdo->prepare($sql); //permet de protéger la requete SQL
+
         $values = array(
             "nom_tag" => '%'.$data.'%',
         );
