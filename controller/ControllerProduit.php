@@ -303,7 +303,8 @@ class ControllerProduit {
        $produit->update($data);
   }
 
-      public static function search(){
+
+    public static function search(){
         if(isset($_GET['data'])){
             $tab = ModelProduit::search($_GET['data']);
             $error_code = 'problème';
