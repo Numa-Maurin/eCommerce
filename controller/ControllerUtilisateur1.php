@@ -243,7 +243,7 @@ class ControllerUtilisateur1 {
     public static function connected() {
         if(isset($_GET['loginUtilisateur']) && $_GET['passUtilisateur']) {
             $u = ModelUtilisateur1::select($_GET['loginUtilisateur']);
-            $verif = ModelUtilisateur1::checkPassword($_GET['loginUtilisateur'],$u->get('passUtilisateur'));
+            $verif = ModelUtilisateur1::checkPassword($_GET['loginUtilisateur'],Security::chiffrer($_GET['passUtilisateur']));
             if($u) {
                 if($verif) {
                     if($u->get('nonce') == NULL) {

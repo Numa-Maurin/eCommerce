@@ -65,13 +65,14 @@ class ControllerCartesBleues {
 				self::readAll();
 
 			}else{
-
 					$view="error";
 					$pagetitle = "Erreur";
 					$error_code = "Create: permission refusée";
 					require (File::build_path(array('view', 'error.php')));
-
 			}
+
+			//http://webinfo.iutmontp.univ-montp2.fr/~prybysl/eCommerce/index.php?controller=cartesBleues&action=created&loginUtilisateur=Louis&code=159&date=2019-12-29&cryptogramme=458&nom=Louis
+
 
 	}
 

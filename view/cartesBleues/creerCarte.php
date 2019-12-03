@@ -46,7 +46,7 @@
 	<br>
 	<label>Date d'expiration (MM/AA): </label>
 	<br>
-	<input type="text" name="date"  required maxlength="5" >
+	<input type="date" name="date"  required maxlength="5" >
 	<br>
 	<label>Cryptogramme:</label>
 	<br>
