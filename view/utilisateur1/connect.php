@@ -23,6 +23,7 @@
         }
         else{
             echo('
+        <p> '.htmlspecialchars($verif).' </p>
         <input type="hidden" name="controller" value="utilisateur1"/>
         <input type="hidden" name="action" value="connected"/>
         <input type="text" placeholder="Login"  name="loginUtilisateur" id="loginUtilisateur_id" required/>
