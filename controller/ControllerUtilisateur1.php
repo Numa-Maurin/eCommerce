@@ -268,7 +268,7 @@ class ControllerUtilisateur1 {
                     }
                 }
                 else {
-                    $verif = 'Votre mot de passe ou votre nom d\'utilisateur est incorrect';
+                    $verif = 'Votre mot de passe est incorrect';
                     $view = 'connect';
                     $pagetitle = 'Se connecter';
                     require (File::build_path(array('view', 'view.php')));
