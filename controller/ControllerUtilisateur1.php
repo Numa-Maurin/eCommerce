@@ -302,7 +302,7 @@ class ControllerUtilisateur1 {
             $tab = ModelUtilisateur1::selectAll();
             foreach ($tab as $u){
                 if ($_GET['loginUtilisateur'] == $u->get('loginUtilisateur')){
-                    $type = 'Déterminer un login authentique car celui-ci est déjà utilisé';
+                    $type = 'Ajout';
                     $view = 'Reconnect';
                     $pagetitle = 'Try Again';
                     require (File::build_path(array('view', 'view.php')));
@@ -315,7 +315,7 @@ class ControllerUtilisateur1 {
                 $view = 'created';
                 $pagetitle = 'Utilisateur ajouté';
                 $mdpsecu = Security::chiffrer($_GET['passUtilisateur']);
-
+                
                 $vemail = filter_var($_GET['emailUser'] , FILTER_VALIDATE_EMAIL);
                 
                 if(Session::is_admin() && isset($_GET['typeUser'])) {

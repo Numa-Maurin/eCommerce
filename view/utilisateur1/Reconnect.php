@@ -10,6 +10,7 @@
      
       if($_GET['action'] === 'created') {
         echo('
+          <p> Déterminer un login authentique car celui-ci est déjà utilisé </p>
         <input type="hidden" name="action" value="created"/>
         <input type="text" placeholder="Login" name="loginUtilisateur" id="loginUtilisateur_id" required/>
         <input type="text" value="'.htmlspecialchars($_GET['nomUtilisateur']).'" name="nomUtilisateur" id="nomUtilisateur_id" required/>
