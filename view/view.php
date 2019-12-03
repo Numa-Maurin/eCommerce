@@ -83,7 +83,7 @@
 						<div class=title_menu><a class=txt_menu href="index.php?action=connect&controller=utilisateur1">Se connecter</a></div>');
 					}
 					?>
-                    <form method="GET">
+                    <form class ="search" method="GET">
                         <input type="hidden" name="action" value="search"/>
                         <input type="search" name="data" placeholder="Recherche..."/>
                         <input type="submit" value="Valider" />
