@@ -159,34 +159,24 @@
             $values = array();
 
             foreach ($data as $cle => $valeur) {
-
-                    $lastkey = end($data);
-                    if (strcmp($data[''.$cle.''], $lastkey) == 0) {
-                        $attributs = $attributs."".$cle."";
-                        $variables = $variables.":".$cle."";
-                        $new_value = array($cle => $valeur,);
-                        $values = array_merge($values, $new_value);
-                    } 
-                    else {
-                        $attributs = $attributs."".$cle.", ";
+                       $attributs = $attributs.$cle.", ";
                         $variables = $variables.":".$cle.", ";
-                        $new_value = array($cle => $valeur,);
-                        $values = array_merge($values, $new_value);
-                    }
             }
+            $attributsFinaux = rtrim($attributs, "\t, ");
+            $variablesFinales = rtrim($variables, "\t, ");
 
 
             try {
-              $sql = "INSERT INTO $table_name ($attributs) VALUES ($variables)";
+              $sql = "INSERT INTO $table_name ($attributsFinaux) VALUES ($variablesFinales)";
 
             // Préparation de la requête
             $req_prep = Model::$pdo->prepare($sql); //permet de protéger la requete SQL
         
-            $req_prep->execute($values);
+            $req_prep->execute($data);
             }
               catch(PDOException $e) {
                 die();
-               } 
+               }
           }
 
     }

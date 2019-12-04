@@ -42,7 +42,7 @@
 
 	<label>Code Carte Bleue:</label>
 	<br>
-	<input type="text" name="code" required >
+	<input type="number" name="code" required >
 	<br>
 	<label>Date d'expiration (MM/AA): </label>
 	<br>
