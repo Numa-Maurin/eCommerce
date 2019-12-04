@@ -299,11 +299,23 @@ class ControllerUtilisateur1 {
     public static function created() {
         if(isset($_GET['loginUtilisateur']) && isset($_GET['nomUtilisateur']) && isset($_GET['prenomUtilisateur']) && isset($_GET['adresseFacturationUtilisateur']) && isset($_GET['adresseLivraisonUtilisateur']) && isset($_GET['passUtilisateur']) && isset($_GET['emailUser'])) {
 
+            $tab = ModelUtilisateur1::selectAll();
+            foreach ($tab as $u){
+                if ($_GET['loginUtilisateur'] == $u->get('loginUtilisateur')){
+                    $type = 'Ajout';
+                    $view = 'Reconnect';
+                    $pagetitle = 'Try Again';
+                    require (File::build_path(array('view', 'view.php')));
+                }
+            }
+
+            //http://webinfo.iutmontp.univ-montp2.fr/~prybysl/eCommerce/index.php?controller=utilisateur1&action=created&loginUtilisateur=Louis&nomUtilisateur=l&prenomUtilisateur=l&adresseFacturationUtilisateur=l&adresseLivraisonUtilisateur=l&passUtilisateur=l&vpassUtilisateur=l&emailUser=louiis%40yopmail.com
+
             if($_GET['passUtilisateur'] === $_GET['vpassUtilisateur']) {
                 $view = 'created';
                 $pagetitle = 'Utilisateur ajouté';
                 $mdpsecu = Security::chiffrer($_GET['passUtilisateur']);
-
+                
                 $vemail = filter_var($_GET['emailUser'] , FILTER_VALIDATE_EMAIL);
                 
                 if(Session::is_admin() && isset($_GET['typeUser'])) {
