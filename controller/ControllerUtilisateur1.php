@@ -309,8 +309,6 @@ class ControllerUtilisateur1 {
                 }
             }
 
-            //http://webinfo.iutmontp.univ-montp2.fr/~prybysl/eCommerce/index.php?controller=utilisateur1&action=created&loginUtilisateur=Louis&nomUtilisateur=l&prenomUtilisateur=l&adresseFacturationUtilisateur=l&adresseLivraisonUtilisateur=l&passUtilisateur=l&vpassUtilisateur=l&emailUser=louiis%40yopmail.com
-
             if($_GET['passUtilisateur'] === $_GET['vpassUtilisateur']) {
                 $view = 'created';
                 $pagetitle = 'Utilisateur ajouté';

@@ -175,25 +175,18 @@
                     }
             }
 
-            $sql = "INSERT INTO $table_name ($attributs) VALUES ($variables)";
+
+            try {
+              $sql = "INSERT INTO $table_name ($attributs) VALUES ($variables)";
 
             // Préparation de la requête
-            //try {
             $req_prep = Model::$pdo->prepare($sql); //permet de protéger la requete SQL
         
             $req_prep->execute($values);
-            /*}
+            }
               catch(PDOException $e) {
-                if (Conf::getDebug()) {
-                    $view = 'error';
-                    $pagetitle = 'Erreur';
-                    require (File::build_path(array('view', 'view.php')));
-                  //echo 'Cette voiture existe déja dans la BD de notre site ! <br> <a href="?action=readAll"> retour a la page d\'accueil </a>'; affiche un message d'erreur
-              } else {
-                  echo 'Une erreur est survenue dans la base de données ! <br> <a href="index.php"> Retour a la page d\'accueil </a>';
-              }
-              die();
-            } */
+                die();
+               } 
           }
 
     }
