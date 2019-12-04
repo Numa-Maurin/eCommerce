@@ -83,7 +83,7 @@ class ControllerUtilisateur1 {
         if(isset($_GET['loginUtilisateur'])) {
             if (Session::is_user($_GET['loginUtilisateur']) || Session::is_admin()) {
                 if(ModelUtilisateur1::select($_GET['loginUtilisateur'])) {
-                    $u = ModelUtilisateur1::delete($_GET['loginUtilisateur']);
+                    ModelUtilisateur1::delete($_GET['loginUtilisateur']);
                     $view = 'deleted';
                     $pagetitle = 'Suppression d\'un utilisateur';
                     if(Session::is_user($_GET['loginUtilisateur'])) {
@@ -396,8 +396,7 @@ class ControllerUtilisateur1 {
                         "emailUser" => $_GET['emailUser'],
                         "typeUser" => $_GET['typeUser'],
                     );
-                    $u = new ModelUtilisateur1($data);
-                    $u->update($data);
+                    ModelUtilisateur1::update($data);
                     require (File::build_path(array('view', 'view.php')));
                 } else {
                     $type = 'Ajout';
