@@ -289,7 +289,7 @@ background-color:#1C1C1C;
 .submenu_bg{ /*Sous Menus Burger*/
 display:none;
 position:absolute;
-background-color:#1C1C1C;
+background-color:#04398d;
 color:#ecf0f1;
 text-align:center;
 }
@@ -421,7 +421,8 @@ h5{
 h1{
 	font-family:arial;
 	font-size:48px;
-	margin-bottom:10px;
+	margin-bottom:40px;
+	text-align:center;
 }
 
 h2 {
@@ -501,17 +502,13 @@ height:43px;
 		width:75%;
 	}
 	
-
-	
 	.img13{
 		width:100%;
 	}
-	
 		#img10{
 		width:350px;
 		height:450px;
 	}
-	
 	
 	h1{
 font-size:28px;
@@ -524,14 +521,7 @@ font-size:24px;
 	h6{
 		font-size:16px;
 	}
-	
-	
 }
-
-
-
-
-
 @media(max-width:1200px){ /*Taille des images et des textes en fonction de la largeur de l'écran */
 		.imgpresse,#technicien{ 
 		height:75%;
@@ -572,6 +562,15 @@ font-size:24px;
 	border-radius: 5px;
 	background-color:#cc1515;;
 	transition-duration:0.5s;
+}
+
+.bouton2{
+	padding:10px;
+	color:white;
+	border-radius: 5px;
+	background-color:#2F4F8A;;
+	transition-duration:0.5s;
+	cursor:pointer;
 }
 
 
@@ -670,8 +669,6 @@ form {
 	margin:0px 250px;	
 	padding:15px 15px;	
 	font-family:verdana;
-
-
 }
 
 .submit_btn{
@@ -683,11 +680,7 @@ form {
 	transition-duration:0.5s;
 	border:0px;
 	cursor: pointer;
-	margin:0px;
-
-
-
-
+	margin:0px 80%;
 }
 
 .img_desc{
@@ -838,25 +831,6 @@ text-align:center;
 .produit4 >div {
 	width:50%;
 	font-family:helvetica;
-}
-
-#pinewatch1 {
-	background-image:url("../Images/bg3.jpg");
-	color:lightgrey;
-	font-family:arial;
-}
-
-#pinewatch2 {
-	color:white;
-	height:1150px;
-	background-image:url("../Images/bg4.jpg");
-	padding-top:60px;
-	
-}
-
-#pinewatch2>.prix {
-	
-	color:gold;
 }
 
 #tab1{

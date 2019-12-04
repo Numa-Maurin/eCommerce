@@ -26,11 +26,11 @@
         echo ('<br> <br> <br><a class="bouton_red" href="index.php?controller=utilisateur1&action=delete&loginUtilisateur=' . rawurlencode($ulogin) . '" >  Cliquez ici pour supprimer cette utilisateur !  </a>');
         echo ('<br> <br> <br><a class= "bouton" href="index.php?controller=utilisateur1&action=update&loginUtilisateur=' . rawurlencode($ulogin) . '" > Cliquez ici pour modifier cette utilisateur ! </a>');
     }
-    else if(Session::is_user($ulogin)) {
+    if(Session::is_user($ulogin)) {
         echo ('<br> <br> <br><a class="bouton_red" href="index.php?controller=utilisateur1&action=delete&loginUtilisateur=' . rawurlencode($ulogin) . '" > Cliquez ici pour supprimer votre compte !  </a>');
         echo ('<br> <br> <br><a class= "bouton" href="index.php?controller=utilisateur1&action=update&loginUtilisateur=' . rawurlencode($ulogin) . '" >  Cliquez ici pour modifier vos informations !  </a>');
     }
-    else if(Session::is_user($ulogin) && Session::is_admin()) {
+    if(Session::is_user($ulogin) && Session::is_admin()) {
         echo ('<br> <br> <br><a class="bouton_red" href="index.php?controller=utilisateur&action=delete&loginUtilisateur=' . rawurlencode($ulogin) . '" > Cliquez ici pour supprimer votre compte ! </a>');
         echo ('<br> <br> <br><a class= "bouton" href="index.php?controller=utilisateur1&action=update&loginUtilisateur=' . rawurlencode($ulogin) . '" > Cliquez ici pour modifier vos informations ! </a>');
     }

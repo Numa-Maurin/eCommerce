@@ -52,13 +52,6 @@ class ModelCommande extends Model{
 
   public function listProduits(){
 
-  	      /*  $table_name = 'ecommerce_appartientCommande';
-            $name = 'associationCommande';
-            $class_name = 'Model' . ucfirst($name);
-            $rep = Model::$pdo->query("SELECT * FROM $table_name");
-            $rep->setFetchMode(PDO::FETCH_CLASS, $class_name);
-            $tab_obj = $rep->fetchAll();*/
-
             $tab_obj = ModelAssociationCommande::select($this->idCommande);
 
             var_dump($tab_obj);
@@ -72,8 +65,6 @@ class ModelCommande extends Model{
 
             		array_push($tab_a,$association);
             	} 
-               
-
             }
 
             foreach ($tab_a as $association => $codeProduit){
@@ -86,19 +77,7 @@ class ModelCommande extends Model{
             	}
 
             }
-           
             return $tab_p;
-
-
   }
-
-
-
-
-
-
 }
-
-
-
 ?>

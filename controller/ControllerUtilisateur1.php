@@ -115,7 +115,7 @@ class ControllerUtilisateur1 {
     
     public static function create() {
         if(Session::is_admin() || !isset($_SESSION['loginUtilisateur'])) {
-            $type = 'Ajout';
+            $type = 'Inscription';
             $view = 'update';
             $pagetitle = 'Ajout d\'un utilisateur';
             require (File::build_path(array('view', 'view.php')));
@@ -302,7 +302,7 @@ class ControllerUtilisateur1 {
             $tab = ModelUtilisateur1::selectAll();
             foreach ($tab as $u){
                 if ($_GET['loginUtilisateur'] == $u->get('loginUtilisateur')){
-                    $type = 'Ajout';
+                    $type = 'Inscription';
                     $view = 'Reconnect';
                     $pagetitle = 'Try Again';
                     require (File::build_path(array('view', 'view.php')));
@@ -353,9 +353,8 @@ class ControllerUtilisateur1 {
                         mail($destinataire, $sujet, $mail, $entete);
                         require (File::build_path(array('view', 'view.php')));
 
-                        http://webinfo.iutmontp.univ-montp2.fr/~prybysl/eCommerce/index.php?controller=utilisateur1&action=created&loginUtilisateur=l&nomUtilisateur=l&prenomUtilisateur=l&adresseFacturationUtilisateur=l&adresseLivraisonUtilisateur=l&passUtilisateur=l&vpassUtilisateur=l&emailUser=prybyslouis%40gmail.com
                 } else {
-                    $type = 'Ajout';
+                    $type = 'Inscription';
                     $verif = 'Votre email n\'est pas valide !';
                     $view = 'update';
                     $pagetitle = 'Ajout d\'un utilisateur';
@@ -363,7 +362,7 @@ class ControllerUtilisateur1 {
                 }
                 
             } else {
-                $type = 'Ajout';
+                $type = 'Inscription';
                 $verif = 'Vos deux mots de passe ne sont pas identiques !';
                 $view = 'update';
                 $pagetitle = 'Ajout d\'un utilisateur';
@@ -400,7 +399,7 @@ class ControllerUtilisateur1 {
                     $u->update($data);
                     require (File::build_path(array('view', 'view.php')));
                 } else {
-                    $type = 'Ajout';
+                    $type = 'Inscription';
                     $verif = 'Vos deux mots de passe ne sont pas identiques !';
                     $view = 'update';
                     $pagetitle = 'Ajout d\'un utilisateur';

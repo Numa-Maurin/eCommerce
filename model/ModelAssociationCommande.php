@@ -43,18 +43,16 @@ class ModelAssociationCommande extends Model{
   }
 
 
-   public static function selectByOrder() {
+   public static function selectByUser() {
 
-
-            $sql = "SELECT A.idCommande, codeProduit, quantite, prixTotalPourProduit FROM associationCommande A JOIN commande C ON A.idCommande = C.idCommande WHERE loginUtilisateur=:userId AND C.idCommande=:commandeId ";
+            $sql = "SELECT A.idCommande, codeProduit, quantite, prixTotalPourProduit FROM associationCommande A JOIN commande C ON A.idCommande = C.idCommande WHERE loginUtilisateur=:idUser AND C.idCommande=:idCommande ";
             // Préparation de la requête
             $req_prep = Model::$pdo->prepare($sql); //permet de protéger la requete SQL
            
             $values = array(
-                "userId" => $_SESSION['loginUtilisateur'],
-                "commandeId" =>$_GET['codeCommande'],
+                "idUser" => $_SESSION['loginUtilisateur'],
+                "idCommande" =>$_GET['codeCommande'],
             );
-
             $req_prep->execute($values);
 
             $req_prep->setFetchMode(PDO::FETCH_CLASS, "ModelAssociationCommande");

@@ -59,7 +59,7 @@ class ControllerCommande {
             if(isset($_GET['codeCommande'])) {
 
                 $c=ModelCommande::select($_GET['codeCommande']);
-                $tab_associations = ModelAssociationCommande::selectByOrder();
+                $tab_associations = ModelAssociationCommande::selectByUser();
                 $tab_p = array();
                 $tab_qte = array();
   

@@ -9,7 +9,7 @@ if(Session::is_admin()){
 
 ?>
 
-<h1> Tous nos produits </h1>
+<h1> Voici nos produits! </h1>
 
 <div class=responsive>
 <?php

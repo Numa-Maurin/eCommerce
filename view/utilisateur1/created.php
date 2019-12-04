@@ -3,13 +3,13 @@
 
     <p>
 
-	    L\'utilisateur a bien été créée !
+	    L\'utilisateur a bien été créé !
 
 	    <br>
 
-	    Veuillez activer votre compte via le lien reçu par mail. 
+	    Vous devez activer votre compte via le lien reçu par mail. 
 
-	    Vous allez être redirigé vers l\'accueil.
+	    Retour vers l\'accueil...
 
 
     </p>
