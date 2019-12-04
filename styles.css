@@ -69,7 +69,7 @@ ul {
 .Produit:hover {
     border: 1px solid #777;
     margin: 0px 15px;
-    background-color: rgba(196, 204, 202, 0.5);
+    background-color: grey;
 }
 
 .Produit img {
@@ -581,12 +581,21 @@ font-size:24px;
 	padding:12px 30px;
 	color:white;
 	border-radius: 5px;
-	background-color:#23af7b;
+	background-color:cornflowerblue;
 	transition-duration:0.5s;
 	float: right;
 	cursor:pointer;
 }
 
+.bouton_recherche{
+	padding:1px 15px;
+	color:white;
+	border-radius: 5px;
+	background-color:cornflowerblue;
+	transition-duration:0.5s;
+	float: right;
+	cursor:pointer;
+}
 
 .bouton_panier:hover{
 
@@ -936,13 +945,10 @@ footer>div{
 	font-size:40px;
 }
 
-.FootBotC2>h5 {
-	margin-top:50px;
-}
 
 .FootBotC3 {
 	text-align:center;
-	width:30%;
+	width:100%;
 	padding-left:10px;
 	padding-right:10px;
 }
@@ -952,8 +958,8 @@ footer>div{
 }
 
 
-#FootAnanas {
-	width:300px;
+#Footlogo {
+	width:200px;
 
 } 
 footer>section {
@@ -1121,4 +1127,14 @@ ul.niveau1 {
 		
 	}
 
+}
+
+.icon{
+	width:40px;
+	height: 40px;
+}
+
+.social-icons{
+	padding-top: 40px;
+	margin-left: 20px;
 }

@@ -10,7 +10,7 @@
         <input type="hidden" name="action" value="connected"/>
         <input type="text" placeholder="Login"  name="loginUtilisateur" id="loginUtilisateur_id" required/>
         <input type="password" placeholder="Mot de passe" name="passUtilisateur" id="passUtilisateur_id" required/>
-        <input type="submit" value="Se connecter"/> ');
+        <input  class="bouton" type="submit" value="Se connecter"/> ');
     } else if ($_GET['action'] === 'connected') {
         if($u){
             echo('
@@ -19,7 +19,7 @@
         <input type="hidden" name="action" value="connected"/>
         <input type="text" placeholder="Login"  name="loginUtilisateur" id="loginUtilisateur_id" value='.htmlspecialchars($_GET['loginUtilisateur']).' required/>
         <input type="password" placeholder="Mot de passe" name="passUtilisateur" id="passUtilisateur_id" required/>
-        <input type="submit" value="Se connecter"/> ');
+        <input  class="bouton" type="submit" value="Se connecter"/> ');
         }
         else{
             echo('
@@ -28,7 +28,7 @@
         <input type="hidden" name="action" value="connected"/>
         <input type="text" placeholder="Login"  name="loginUtilisateur" id="loginUtilisateur_id" required/>
         <input type="password" placeholder="Mot de passe" name="passUtilisateur" id="passUtilisateur_id" required/>
-        <input type="submit" value="Se connecter"/> ');
+        <input class="bouton" type="submit" value="Se connecter"/> ');
         }
 
     }
