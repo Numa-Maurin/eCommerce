@@ -46,10 +46,7 @@ class ControllerCartesBleues {
 			$pagetitle = "Erreur";
 			$error_code = "Create: utilisateur non connecté";
 			require (File::build_path(array('view', 'error.php')));
-
-
 		}
-	
 
 	}
 
@@ -58,20 +55,29 @@ class ControllerCartesBleues {
 
 			if(Session::is_user($_GET['loginUtilisateur']) || Session::is_admin() ){
 
-				$data = array('codeCarteBleue'=>$_GET['code'],'loginUtilisateur'=>$_GET['loginUtilisateur'],'dateExp'=>$_GET['date'],'cryptogramme'=>$_GET['cryptogramme'],'nomTitulaire'=>$_GET['nom']);
+				$u = ModelCartesBleues::select($_GET['code']);
 
-				$c=new ModelCartesBleues();
-				$c->save($data);
-				self::readAll();
+				if ($_GET['code'] == $u->get('codeCarteBleue')){
+					$view="Recard";
+					$pagetitle = 'Reinsertion';
+					require (File::build_path(array('view', 'view.php')));
 
-			}else{
+				}
+				else {
+					
+					$data = array('codeCarteBleue'=>$_GET['code'],'loginUtilisateur'=>$_GET['loginUtilisateur'],'dateExp'=>$_GET['date'],'cryptogramme'=>$_GET['cryptogramme'],'nomTitulaire'=>$_GET['nom']);
+
+					$c=new ModelCartesBleues();
+					$c->save($data);
+					self::readAll();
+				}
+
+			}else {
 					$view="error";
 					$pagetitle = "Erreur";
 					$error_code = "Create: permission refusée";
 					require (File::build_path(array('view', 'error.php')));
 			}
-
-
 	}
 
 	public static function delete (){
