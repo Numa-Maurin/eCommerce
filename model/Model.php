@@ -100,35 +100,34 @@
             $class_name = 'Model' . ucfirst($name);
             $primary_key = static::$primary;
             $set = "";
-            $values = array();
 
             foreach ($data as $cle => $valeur) {
                 if (strcmp($cle, $primary_key) != 0) {
-                    $lastkey = end($data);
-                    if (strcmp($data[''.$cle.''], $lastkey) == 0) {
-                        $set = $set.$cle."=:".$cle." ";
-                        $new_value = array($cle => $valeur,);
-                        $values = array_merge($values, $new_value);
-                    } 
-                    else {
-                        $set = $set.$cle."=:".$cle." , ";
-                        $new_value = array($cle => $valeur,);
-                        $values = array_merge($values, $new_value);
-                    }
+                    $set = $set.$cle."=:".$cle.", ";
                 }
                 else {
-                    $new_value = array($cle => $valeur,);
-                    $values = array_merge($values, $new_value);
                 } 
-            } 
-
+            }
+            $set = rtrim($set, "\t, ");
             $primary_value = ":".$primary_key;
 
             $sql = "UPDATE $table_name SET $set WHERE $primary_key =$primary_value";
               $req_prep = Model::$pdo->prepare($sql);
-          
-              $req_prep->execute($values);
-          }
+
+              $req_prep->execute($data);
+            /*}
+            catch(PDOException $e) {
+              if (Conf::getDebug()) {
+                  $error_code = 'Model : save, error';
+                  $view = 'error';
+                  $pagetitle = 'Erreur';
+                  require (File::build_path(array('view', 'error.php')));
+              } else {
+                echo ('Une erreur est survenue. Impossible de modifier la base de données ! <br> <a href="index.php"> Retour a la page d\'accueil </a>');
+              }
+              die();
+            } */
+        }
           
           public static function save($data) {
             $table_name = static::$object;
@@ -137,7 +136,6 @@
             $primary_key = static::$primary;
             $attributs = "";
             $variables = "";
-            $values = array();
 
             foreach ($data as $cle => $valeur) {
                        $attributs = $attributs.$cle.", ";
