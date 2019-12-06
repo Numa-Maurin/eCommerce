@@ -14,19 +14,14 @@ class ControllerCartesBleues {
 			$view="cartes";
 			$pagetitle = 'Vos cartes bleues enregistrées';
 			require (File::build_path(array('view', 'view.php')));
-
-
+			
 		}else{
 
 			$view="error";
 			$pagetitle = "Erreur";
 			$error_code = "ReadAll: utilisateur non connecté";
 			require (File::build_path(array('view', 'error.php')));
-
-
 		}
-
-
 	}
 
 
@@ -39,7 +34,6 @@ class ControllerCartesBleues {
 			$pagetitle = 'Ajouter une nouvelle carte bleue';
 			require (File::build_path(array('view', 'view.php')));
 
-
 		}else{
 
 			$view="error";
@@ -47,11 +41,9 @@ class ControllerCartesBleues {
 			$error_code = "Create: utilisateur non connecté";
 			require (File::build_path(array('view', 'error.php')));
 		}
-
 	}
 
 	public static function created(){
-
 
 			if(Session::is_user($_GET['loginUtilisateur']) || Session::is_admin() ){
                     $u = ModelCartesBleues::select($_GET['code']);
@@ -67,10 +59,6 @@ class ControllerCartesBleues {
                         $c->save($data);
                         self::readAll();
                     }
-
-
-
-
 
 			}else {
 					$view="error";
