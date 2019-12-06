@@ -4,6 +4,6 @@
 		<br>
 		Vous allez être redirigé vers la page des produits.
 	</p>           
-	<img class="logopage" src="./Images/logoananas.png">	
+	<img class="logopage" src="./Images/Smartyou.png">
 	<meta http-equiv="refresh" content="3; URL=index.php?action=readAll&controller=produit" />
 </div>
