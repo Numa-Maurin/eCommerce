@@ -54,23 +54,23 @@ class ControllerCartesBleues {
 
 
 			if(Session::is_user($_GET['loginUtilisateur']) || Session::is_admin() ){
+                    $u = ModelCartesBleues::select($_GET['code']);
+                    if ($u){
+                        $view="Recard";
+                        $pagetitle = 'Reinsertion';
+                        require (File::build_path(array('view', 'view.php')));
 
-				$u = ModelCartesBleues::select($_GET['code']);
+                    }
+                    else{
+                        $data = array('codeCarteBleue'=>$_GET['code'],'loginUtilisateur'=>$_GET['loginUtilisateur'],'dateExp'=>$_GET['date'],'cryptogramme'=>$_GET['cryptogramme'],'nomTitulaire'=>$_GET['nom']);
+                        $c=new ModelCartesBleues();
+                        $c->save($data);
+                        self::readAll();
+                    }
 
-				if ($_GET['code'] == $u->get('codeCarteBleue')){
-					$view="Recard";
-					$pagetitle = 'Reinsertion';
-					require (File::build_path(array('view', 'view.php')));
 
-				}
-				else {
-					
-					$data = array('codeCarteBleue'=>$_GET['code'],'loginUtilisateur'=>$_GET['loginUtilisateur'],'dateExp'=>$_GET['date'],'cryptogramme'=>$_GET['cryptogramme'],'nomTitulaire'=>$_GET['nom']);
 
-					$c=new ModelCartesBleues();
-					$c->save($data);
-					self::readAll();
-				}
+
 
 			}else {
 					$view="error";
