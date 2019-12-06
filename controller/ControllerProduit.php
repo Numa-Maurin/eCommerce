@@ -204,38 +204,21 @@ class ControllerProduit {
         $found=false;
 
         if(!empty($tab)){
-
-    
             foreach ($tab as $tab_p) {
-
-
                 if($code===$tab_p[0]){
-
                     array_push($tab_produit,$code);
                     if($tab_p[1]+$qté <= 0){
-
-
                         self::retirerPanier();
                         exit(0);
                     }
                     array_push($tab_produit,$tab_p[1]+$qté);
-
                     array_push($tab_new, $tab_produit);
                     $found=true;
-                    
-                   
-
                 }else{
-
                     array_push($tab_new,$tab_p);
                 }
-
-        
-                
             }
-
                 if(!$found){
-
                  array_push($tab_produit,$code);
                  array_push($tab_produit,1);
 

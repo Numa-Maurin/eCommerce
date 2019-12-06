@@ -108,7 +108,7 @@
 	<div class="FootBot">
 		<div class="FootBotC1">
 			<div>
-				<a> <img class = "responsive-img " src="./Images/Smartyou.png" alt="Erreur 2ème logo" id="Footlogo"></a>
+				<a> <img class = "responsive-img " src="./Images/Smartyou.png" alt="Erreur 2ème logo" id="FootSmart"></a>
 			</div>
 		</div>
 		<div class="FootBotC3">

@@ -931,7 +931,10 @@ footer>section {
 }
 
 
-
+#FootSmart{
+	width:200px;
+	height:200px;
+}
 
 @media(max-width:1200px){ /*Taille des images et des textes en fonction de la largeur de l'écran */
 	.FootBotC1>h1, .FootBotC2>h1, .FootBotC3>h1{
@@ -941,12 +944,6 @@ footer>section {
 	.FootBotC1>h5, .FootBotC2>h5, .FootBotC3>h5{
 		font-size:18px;
 	}
-	
-	#FootAnanas{
-		width:100%;
-		height:100%;
-	}
-	
 }
 
 #form_update_create{
