@@ -28,7 +28,7 @@ class ModelUtilisateur1 extends Model{
         return false;
     }
 
-    // un constructeur
+    // Constructeur
     public function __construct($data = array()) {
         if (!empty($data)) {
             $this->loginUtilisateur = $data['loginUtilisateur'];
@@ -43,7 +43,8 @@ class ModelUtilisateur1 extends Model{
         }
     }
     
-    //vérifie si le mot de passe crypté passé est le meme que celui dans la base de données pour le login donné
+    //vérifie si le mot de passe crypté passé en argument est le meme que celui dans la base de données pour le login
+    //donné en argument
     public static function checkPassword($loginUtilisateur, $mot_de_passe_chiffre) { 
         $u = static::select($loginUtilisateur);
         if($u) {

@@ -112,21 +112,11 @@
             $primary_value = ":".$primary_key;
 
             $sql = "UPDATE $table_name SET $set WHERE $primary_key =$primary_value";
+
+             // Préparation de la requête, permet de protéger la requête SQL
               $req_prep = Model::$pdo->prepare($sql);
 
               $req_prep->execute($data);
-            /*}
-            catch(PDOException $e) {
-              if (Conf::getDebug()) {
-                  $error_code = 'Model : save, error';
-                  $view = 'error';
-                  $pagetitle = 'Erreur';
-                  require (File::build_path(array('view', 'error.php')));
-              } else {
-                echo ('Une erreur est survenue. Impossible de modifier la base de données ! <br> <a href="index.php"> Retour a la page d\'accueil </a>');
-              }
-              die();
-            } */
         }
           
           public static function save($data) {

@@ -68,6 +68,7 @@ class ControllerCartesBleues {
 			}
 	}
 
+	// Supression d'une carte bleue
 	public static function delete (){
 
 		$code = $_GET['code'];

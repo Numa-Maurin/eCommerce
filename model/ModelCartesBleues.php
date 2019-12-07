@@ -28,7 +28,7 @@ class ModelCartesBleues extends Model{
         return false;
     }
 
-    // un constructeur
+    // Constructeur
     public function __construct($data = array()) {
         if (!empty($data)){
 

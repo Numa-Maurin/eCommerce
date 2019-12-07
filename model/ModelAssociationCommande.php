@@ -30,6 +30,7 @@ class ModelAssociationCommande extends Model{
 
   }
 
+  // constructeur
   public function __construct($data = array()) {
 
 	  if (!empty($data)) {

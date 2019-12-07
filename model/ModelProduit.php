@@ -29,6 +29,7 @@ class ModelProduit extends Model
         return false;
     }
 
+    // constructeur
     public function __construct($data = array())
     {
         if (!empty($data)) {
