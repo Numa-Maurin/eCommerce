@@ -90,5 +90,12 @@ class ControllerCartesBleues {
 		}
 
 	}
+
+	public static function errorAction() {
+		$error_code = 'routeur : action inexistante !';
+		$view = 'error';
+		$pagetitle = 'Erreur';
+		require (File::build_path(array('view', 'error.php')));
+    }
 }
 ?>

@@ -105,5 +105,12 @@ class ControllerCommande {
       setcookie("produits_panier",0,time()-1); //Faire expirer le cookie
    }
 
+   public static function errorAction() {
+    $error_code = 'routeur : action inexistante !';
+    $view = 'error';
+    $pagetitle = 'Erreur';
+    require (File::build_path(array('view', 'error.php')));
+    }
+
 }
 ?>
