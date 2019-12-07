@@ -3,14 +3,16 @@
 class Security {
     private static $seed = 'CtwYvHNqvQ';
 
+    // stocker la version chiffrée du mot de passe
+    // dans le base de données
     static function chiffrer($texte_en_clair) {
-    $texte_seed = self::$seed . $texte_en_clair;
-    $texte_chiffre = hash('sha256', $texte_seed);
-    return $texte_chiffre;
+        $texte_seed = self::$seed . $texte_en_clair;
+        $texte_chiffre = hash('sha256', $texte_seed);
+        return $texte_chiffre;
     }
 
     static public function getSeed() {
-    return self::$seed;
+        return self::$seed;
     }
 
     static function generateRandomHex() {
@@ -20,6 +22,5 @@ class Security {
         $hex   = bin2hex($bytes);
         return $hex;
     }
-
 }
 ?>

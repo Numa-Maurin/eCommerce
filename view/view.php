@@ -106,31 +106,17 @@
 
 <footer>
 	<div class="FootBot">
-		<div class="FootBotC1">
-			<div>
-				<a> <img class = "responsive-img " src="./Images/Smartyou.png" alt="Erreur 2ème logo" id="FootSmart"></a>
-			</div>
-		</div>
-		<div class="FootBotC3">
-			<h1>Vous cherchez un Smartphone, vous etes au bon endroit</h1>
-			<h1>Apple, Samsung, Xiaomi...</h1>
-			<h5>Ils sont tous disponibles chez nous !!</h5>
-		</div>
-		<div>
-			<div class="footerSocialIcons">
-				<h4 class="">Suivez nous :</h4>
-				<div class="social-icons">
-					<a href="https://www.instagram.com/?hl=fr" class="social-icon"> <img class="icon" src="./Images/insta.png" alt="ca marche pas"></i></a>
-					<a href="https://fr-fr.facebook.com/" class="social-icon"> <img class="icon" src="./Images/fb.png" alt="ca marche pas"></i></a>
-					<a href="https://www.twitter.com/" class="social-icon"> <img class="icon"src="./Images/twitter.png" alt="ca marche pas"></i></a>
-				</div>
+		<div class="footerSocialIcons">
+			<h4 class="">Suivez nous</h4>
+			<div class="social-icons">
+				<a href="https://www.instagram.com/?hl=fr" class="social-icon"> <img class="icon" src="./Images/insta.png" alt="ca marche pas"></i></a>
+				<a href="https://fr-fr.facebook.com/" class="social-icon"> <img class="icon" src="./Images/fb.png" alt="ca marche pas"></i></a>
+				<a href="https://www.twitter.com/" class="social-icon"> <img class="icon"src="./Images/twitter.png" alt="ca marche pas"></i></a>
 			</div>
 		</div>
 	</div>
-	<p>
-
-	</footer> 
-	</html>
+</footer> 
+</html>
 
 
 

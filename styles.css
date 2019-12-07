@@ -732,21 +732,6 @@ p{
 
 /* Composition page produit */
 
-.img7 {
-	background-image:url("../Images/img9.png");
-	height:831px;
-	width:931px;
-	margin:auto;
-
-}
-
-.img7:hover{
-	background-image:url("../Images/img9flash.png");
-
-	
-}
-
-
 .txt_produit {
 	padding-top:100px;
 	text-align:center;
@@ -859,91 +844,15 @@ text-align:center;
 }
 
 footer {
-	padding-top:0px;
 	background-color:#1C1C1C;
 
 }
 
 footer>div{
 	background-color:#04398d;
-	padding:4% 5% 0% 5%;
+	padding:2% 0% 2% 40%;
 	color:white;
 	display:flex;
-}
-
-.FootBotC1 {
-	width:30%;
-	padding-left:10px;
-	padding-right:10px;
-}
-
-.FootBotC2 {
-	text-align:center;
-	width:30%;
-	padding-left:10px;
-	padding-right:10px;
-}
-
-.FootBotC2>h1 {
-	font-size:40px;
-}
-
-
-.FootBotC3 {
-	text-align:center;
-	width:100%;
-	padding-left:10px;
-	padding-right:10px;
-}
-
-.FootBotC3>h1 {
-	font-size:40px;
-}
-
-
-#Footlogo {
-	width:200px;
-
-} 
-footer>section {
-	padding-top:50px;
-	padding-bottom:50px;
-	background-color:#EFEFEF;
-	display:flex;
-	
-	
-}
-
-.TitreFoot {
-	padding-left:20%;
-	color:#696969;
-	font-size:23px;
-	text-align:center;
-}
-
-#FootPD5 {
-	text-align:center;
-	padding:20px 50px 20px 50px;
-	margin-left:10px;
-	margin-top:-15px;
-	background-color:#2F4F4F;
-	border-radius:5px;
-}
-
-
-#FootSmart{
-	width:200px;
-	height:200px;
-}
-
-@media(max-width:1200px){ /*Taille des images et des textes en fonction de la largeur de l'écran */
-	.FootBotC1>h1, .FootBotC2>h1, .FootBotC3>h1{
-		font-size:28px;
-	}
-	
-	.FootBotC1>h5, .FootBotC2>h5, .FootBotC3>h5{
-		font-size:18px;
-	}
 }
 
 #form_update_create{
@@ -958,18 +867,6 @@ footer>section {
 #boutons_form{
 
 	float:right;
-}
-
-
-#nous_rejoindre{
-		background-image:url("../Images/bg2white.png"); 
-		
-}
-
-#nous_rejoindre>h1{
-	margin-top:20px;
-	text-align:center;
-	
 }
 
 .div_cb{
@@ -992,63 +889,6 @@ footer>section {
 	font-size:20px;
 }
 
-#nous_rejoindre>div.bloc{
-	display:flex;
-	flex-direction:row;
-	text-align:center;
-}
-
-.metier {
-	margin:20px 40px 40px 40px;
-	padding:40px 40px 40px 40px;
-	background-color:#F4F6F7;
-	width:50%;
-	border-radius:10px;
-}
-
-.metier>a {
-	color:black;
-}
-div#metier3.metier {
-margin:auto;
-}
-.metier>ul>li {
-	list-style-type:none;
-	
-}
-.metier>ul>li>ul {
-	display:none;
-	color:black;
-	text-align:left;
-}
-ul.niveau1 {
-	background-color:#CCD1D1;
-	border-radius:10px;
-	padding:15px 15px 25px 15px;
-}
-#metier1>ul>li:hover>ul {
-	display:block;
-	background-color:#CCD1D1;
-}
-
-#metier2>ul>li:hover>ul {
-	display:block;
-	background-color:#CCD1D1;
-}
-
-#metier3>ul>li:hover>ul {
-	display:block;
-	background-color:#CCD1D1;
-}
-
-.niveau2nr {
-	color:black;
-}
-.niveau2nr>h5 {
-	font-size:20px;
-	margin-top:-10px;
-	margin-bottom:10px;
-}
 
 @media(max-width:1200px) {
 	#nous_rejoindre>div.bloc{
@@ -1075,6 +915,6 @@ ul.niveau1 {
 }
 
 .social-icons{
-	padding-top: 40px;
-	margin-left: 20px;
+	padding-top: 20px;
+	margin-left: 55px;
 }
