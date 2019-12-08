@@ -18,7 +18,7 @@
 		<header>
 			<nav> <!--Menu-->
 				<div class=menu_burger>
-					<a> <img src="./Images/logoananas.png" alt="Ca fonctionne pas nulos" id="logobg"></a>
+					<a> <img src="./Images/logo.png" alt="Erreur d'affichage d'image" id="logobg"></a>
 					<div class="submenu_bg">
 						<div><a class=txt_sub href="index.php">Accueil</a></div>
 						<br>

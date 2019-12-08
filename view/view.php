@@ -19,7 +19,7 @@
 <header>
 	<nav> <!--Menu-->
 		<div class=menu_burger>
-			<a> <img class = "responsive-img" src="./Images/logo.png " alt="Ca fonctionne pas nulos" id="logobg"></a>
+			<a> <img class = "responsive-img" src="./Images/logo.png " alt="Erreur d'affichage d'image" id="logobg"></a>
 			<div class="submenu_bg">
 				<div><a class=ctg_menu_burger href="index.php">Accueil</a></div>
 				<br>
@@ -48,7 +48,7 @@
 
 
 		<div class=menu>
-			<a href="index.php"><img src="./Images/logo.png" alt="Ca fonctionne pas nulos" id="logo"></a>
+			<a href="index.php"><img src="./Images/logo.png" alt="Erreur d'affichage d'image" id="logo"></a>
 
 			<?php 
 
