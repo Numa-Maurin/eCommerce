@@ -71,7 +71,7 @@
 	<input type="submit" value="Valider la commande" class="submit_btn" style="float:right;">
 	<br>
 	<br>
-	<a>En cliquant sur "Valider la commande", j'accepte de me faire escroquer sans conditions</a>
+	<a>En cliquant sur "Valider" j'accepte les conditions de vente!</a>
 
 
 

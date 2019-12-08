@@ -1,7 +1,7 @@
 <?php
 
 class Security {
-    private static $seed = 'CtwYvHNqvQ';
+    private static $seed = 'zewvReQxDl';
 
     // stocker la version chiffrée du mot de passe
     // dans le base de données
