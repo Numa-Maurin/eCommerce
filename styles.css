@@ -152,7 +152,6 @@ div.desc {
 
 
 .menu, .menu_burger { /*Barre de menus*/
-/*Ancienne couleur:#7f8c8d*/
  background-color:#04398d; 
  width:100%;
  height:50px;
@@ -196,17 +195,21 @@ div.desc {
 }
 
 .ctg_nav { /*Nom des catégories*/
-color:white;
-line-height:2.5em; /*Centrer verticalment*/
-text-decoration:none;
-font-size: 17px;
+	color:white;
+	line-height:2.5em;
+	text-decoration:none;
+	font-size: 16px;
+	font-weight: bold ;
+	text-transform: uppercase;
 }
 
 .ctg_nav_admin{
 	color:#ff2020;
-	line-height:2.5em; /*Centrer verticalment*/
+	line-height:2.5em;
 	text-decoration:none;
-	font-size: 17px;
+	font-size: 15px;
+	font-weight: bold ;
+	text-transform: uppercase;
 }
 
 .ctg_menu_burger{ /*Nom des sections*/
@@ -214,7 +217,9 @@ font-size: 17px;
 	text-decoration:none;
 	color:#ecf0f1;
 	text-decoration:none;
-	font-size: 16px;
+	font-size: 17px;
+	font-weight: bold ;
+	text-transform: uppercase;
 }
 
 @media(max-width:1200px){ /*Agrandissement du texte des sous-menus*/
@@ -224,11 +229,11 @@ font-size: 17px;
 
 }
 
-.ctg_menu_burger:hover{ /*Texte des menus survolés*/
+.ctg_menu_burger:hover{
 color:grey;
 }
 
-.titre_section:hover .ctg_nav{ /*Texte des sous-menus survolés*/
+.titre_section:hover .ctg_nav{
 color:grey;
 }
 
@@ -239,14 +244,14 @@ color:grey;
 
 }
 
-.submenu{ /*Sous Menus*/
+.sous_menu{ /*Sous Menus*/
 display:none;
 position:absolute;
 background-color:#1C1C1C;
 /* color:#ecf0f1; */
 }
 
-.submenu_bg{ /*Sous Menus Burger*/
+.sous_menu_bg{ /*Sous Menus Burger*/
 display:none;
 position:absolute;
 background-color:#04398d;
@@ -254,7 +259,7 @@ color:#ecf0f1;
 text-align:center;
 }
 
-.menu_burger:hover .submenu_bg{ /*Afficher Sous-Menus Burger */
+.menu_burger:hover .sous_menu_bg{ /*Afficher Sous-Menus Burger */
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -263,7 +268,7 @@ width:100%;
 font-size:24px;
 }
 
-.titre_section:hover .submenu{ /*Afficher Sous-Menus*/
+.titre_section:hover .sous_menu{ /*Afficher Sous-Menus*/
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -627,8 +632,8 @@ input {
 }
 
 textarea{ /*Grande zone de texte du formulaire */
-	height:100px;
-	width:600px;
+	height:70px;
+	width:700px;
 }
 
 
@@ -703,8 +708,8 @@ p{
 #tab2>.prix {
 	color:white;
 }
-
-@media(max-width:800px){ /*Taille des images et des textes en fonction de la largeur de l'écran */
+/*
+@media(max-width:800px){ /*Taille des images et des textes en fonction de la largeur de l'écran *//*
 	.produit2{
 		display: flex;
 		flex-direction:column;
@@ -742,7 +747,7 @@ p{
 		height:970px;
 	}
 }
-
+*/
 footer {
 	background-color:#1C1C1C;
 

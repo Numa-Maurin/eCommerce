@@ -19,7 +19,7 @@
 			<nav> <!--Menu-->
 				<div class=menu_burger>
 					<a> <img src="./Images/logo.png" alt="Erreur d'affichage d'image" id="logobg"></a>
-					<div class="submenu_bg">
+					<div class="sous_menu_bg">
 						<div><a class=ctg_menu_burger href="index.php">Accueil</a></div>
 						<br>
 						<div><a class=ctg_menu_burger href="index.php?action=readAll&controller=produit">Produits</a></div>

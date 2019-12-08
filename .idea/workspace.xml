@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18f45905-0de6-4e4f-8440-bd58ec3e91a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +21,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>show</find>
-      <find>ananas</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -32,12 +28,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="233" />
-    <option name="y" value="380" />
-    <option name="width" value="1009" />
-    <option name="height" value="1068" />
   </component>
   <component name="ProjectId" id="1UXIACUZXlsWhTPpiIa5jeJiBuc" />
   <component name="PropertiesComponent">
@@ -78,8 +68,16 @@
       <workItem from="1575497772152" duration="242000" />
       <workItem from="1575629466587" duration="1360000" />
       <workItem from="1575641755916" duration="1014000" />
-      <workItem from="1575844525657" duration="421000" />
+      <workItem from="1575844525657" duration="1774000" />
     </task>
+    <task id="LOCAL-00001" summary="Changement 4">
+      <created>1575844963204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575844963204</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +109,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changement 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement 4" />
   </component>
   <component name="masterDetails">
     <states>

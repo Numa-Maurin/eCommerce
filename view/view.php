@@ -20,7 +20,7 @@
 	<nav> <!--Menu-->
 		<div class=menu_burger>
 			<a> <img class = "responsive-img" src="./Images/logo.png " alt="Erreur d'affichage d'image" id="logobg"></a>
-			<div class="submenu_bg">
+			<div class="sous_menu_bg">
 				<div><a class=ctg_menu_burger href="index.php">Accueil</a></div>
 				<br>
 				<div><a class=ctg_menu_burger href="index.php?action=readAll&controller=produit">Produits</a></div>
@@ -49,19 +49,11 @@
 
 		<div class=menu>
 			<a href="index.php"><img src="./Images/logo.png" alt="Erreur d'affichage d'image" id="logo"></a>
-
-			<?php 
-
-
+			<?php
 			if(Session::is_admin()) {
-
 				echo '<div class=titre_section><a class=ctg_nav_admin >Mode Admin</a></div>';
-
-
 			}
-
 			?>
-
 			<div class=titre_section><a class=ctg_nav href="index.php?action=readAll&controller=produit">Produits</a></div>
 			<div class=titre_section><a class=ctg_nav href="index.php?action=show_panier&controller=utilisateur1">Panier</a></div>
 			<?php
