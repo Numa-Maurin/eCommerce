@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18f45905-0de6-4e4f-8440-bd58ec3e91a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/error.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/utilisateur1/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/utilisateur1/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/cartesBleues/Recard.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/cartesBleues/recard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/utilisateur1/Reconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/utilisateur1/reconnect.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

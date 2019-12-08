@@ -268,48 +268,6 @@ Les blocs div de l'accueil
     margin-right: 30%;
     margin-left: 30%;
 }
-
-.divaccueil{
-text-align:center;
-padding:70px 0px 100px 0px;
-background-color:white;
-}
-
-#divaccueil2{
-	text-align:center;
-	width:50%;
-	padding:50px 0px 0px 0px;
-	background-color:white;
-
-
-}
-
-#divaccueil3{
-	text-align:center;
-	width:50%;
-	background-color:#AF1E2D;
-	color:white;
-	padding:50px 0px 0px 0px;
-
-}
-
-#divaccueil4{
-	text-align:center;
-	width:50%;
-	background-color:lightgray;
-	padding:50px 0px;
-	
-}
-
-#divaccueil5{
-	text-align:center;
-	width:50%;
-	background-color:#DEDEDE;
-	padding:50px 0px;
-
-}
-
-
 .multiplediv { /* Gérer la position de plusieurs div côte à côte */
 	font-family:helvetica;
 	text-align:center;
@@ -322,26 +280,6 @@ background-color:white;
 	.multiplediv{
 		flex-direction:column;
 	}
-	
-	#divaccueil2{
-		width:100%;
-		
-	}
-		
-		#divaccueil3{
-		width:100%;
-		
-		}
-		
-		#divaccueil4{
-		width:100%;
-		}
-		
-		#divaccueil5{
-		width:100%;
-		}
-		
-		
 }
 
 
@@ -406,15 +344,6 @@ height:43px;
 	height:75px;
 
 }
-
-
-#technicien { /*Image du technicien */
-	height:476.25px;
-	width:1011.75px;
-	border-radius:10px;
-}
-
-
 @media(max-width:800px){ /*Taille des images et des titres en fonction de la largeur de l'écran */
 	#img1,.img2,.img3,#img4,#img5{
 		height:100%;
