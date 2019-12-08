@@ -53,7 +53,7 @@
       ?>
     </p>
 
-    <div id="boutons_form">
+    <div id="bouton-form">
       <input type="submit" value="Enregistrer" class="submit_btn">
       <a class="bouton_red" href="./index.php?action=readAll&controller=produit" >Annuler</a>
     

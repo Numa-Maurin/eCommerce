@@ -1,5 +1,4 @@
 
-
 <?php
     if(Session::is_admin()){
         echo '<h1>Détails de l\'utilisateur '.htmlspecialchars($ulogin).'</h1>';
