@@ -15,24 +15,8 @@ a {
 	
 }
 
-address {
-	text-align:center;
-	font-size:20px;
-	background-color:#F4F6F7;
-	padding:20px;
-	margin:100px 0px 0px 0px;
-}
-
-footer{ 
-	background-color:#1C1C1C;
-
-}
-
 main {
-
 	padding: 100px;
-
-
 }
 
 ul {
@@ -244,14 +228,14 @@ color:grey;
 
 }
 
-.sous_menu{ /*Sous Menus*/
+.sous_menu{
 display:none;
 position:absolute;
 background-color:#1C1C1C;
 /* color:#ecf0f1; */
 }
 
-.sous_menu_bg{ /*Sous Menus Burger*/
+.sous_menu_burger{
 display:none;
 position:absolute;
 background-color:#04398d;
@@ -259,7 +243,7 @@ color:#ecf0f1;
 text-align:center;
 }
 
-.menu_burger:hover .sous_menu_bg{ /*Afficher Sous-Menus Burger */
+.menu_burger:hover .sous_menu_burger{
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -268,7 +252,7 @@ width:100%;
 font-size:24px;
 }
 
-.titre_section:hover .sous_menu{ /*Afficher Sous-Menus*/
+.titre_section:hover .sous_menu{
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -617,12 +601,6 @@ form {
 	cursor: pointer;
 }
 
-.img_desc{
-
-	max-width: 250px;
-
-}
-
 .submit_btn:hover{
 	background-color:#2F50D5;
 }
@@ -631,7 +609,7 @@ input {
 	margin: 10px 30px 10px 0px;
 }
 
-textarea{ /*Grande zone de texte du formulaire */
+textarea{
 	height:70px;
 	width:700px;
 }
@@ -647,32 +625,6 @@ textarea{ /*Grande zone de texte du formulaire */
 	}
 	
 }
-
-#equipe{
-		background-image:url("../Images/bg2white.png"); 
-		text-align:center;
-}
-#contact {
-
-	padding:100px 0px;
-	background-image:url("../Images/bg2.jpg"); 
-	text-align:center;
-}
-
-/*Les paragraphes*/
-
-#pproduit1 {
-	font-size:22px;
-	text-align:center;
-	font-family:helvetica;
-}
-
-.ppresse{ /*Les paragraphes de la page presse*/
-	background-color:#F4F6F7;
-	text-align:center;
-	padding:20px 100px;
-}
-
 p{
 	font-family:calibri;
 	font-size:20px;
@@ -692,22 +644,6 @@ p{
     min-height: 209px;
 }
 
-#tab1{
-	background-image:none;
-	background-color:white;
-	color:black;
-	height:816px;
-}
-
-#tab2 {
-	background-color:#DCC0A4;
-	padding-top:60px;
-		height:1150px;
-}
-
-#tab2>.prix {
-	color:white;
-}
 /*
 @media(max-width:800px){ /*Taille des images et des textes en fonction de la largeur de l'écran *//*
 	.produit2{
