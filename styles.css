@@ -63,7 +63,7 @@ ul {
 }
 
 
-.presentation{
+.detail{
 
 	margin: 0px 184px;
    
@@ -268,21 +268,6 @@ Les blocs div de l'accueil
     margin-right: 30%;
     margin-left: 30%;
 }
-.multiplediv { /* Gérer la position de plusieurs div côte à côte */
-	font-family:helvetica;
-	text-align:center;
-	display: flex;
-	flex-direction:row;
-}
-
-
-@media(max-width:1200px){ /*Position relative des div en fonction de la largeur de l'écran*/
-	.multiplediv{
-		flex-direction:column;
-	}
-}
-
-
 /*
 Les principaux textes
 */
@@ -370,12 +355,7 @@ font-size:24px;
 		font-size:16px;
 	}
 }
-@media(max-width:1200px){ /*Taille des images et des textes en fonction de la largeur de l'écran */
-		.imgpresse,#technicien{ 
-		height:75%;
-		width:75%;
-	}
-	
+@media(max-width:1200px){ /*Taille des textes en fonction de la largeur de l'écran */
 	h2{
 		font-size:20px;
 	}
@@ -387,7 +367,7 @@ font-size:24px;
 
 }
 
-@media(max-width:800px){ /*Taille des images et des textes en fonction de la largeur de l'écran */
+@media(max-width:800px){ /*Taille des textes en fonction de la largeur de l'écran */
 	
 	h2{
 		font-size:22px;

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18f45905-0de6-4e4f-8440-bd58ec3e91a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/cartesBleues/Recard.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/cartesBleues/recard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/utilisateur1/Reconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/utilisateur1/reconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/produit/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/produit/detail.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575846396955</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changement 7">
+      <created>1575848427335</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575848427335</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +125,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changement 4" />
     <MESSAGE value="Changement 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement 5" />
+    <MESSAGE value="Changement 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement 7" />
   </component>
   <component name="masterDetails">
     <states>

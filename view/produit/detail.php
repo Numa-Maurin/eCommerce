@@ -13,7 +13,7 @@ if(Session::is_admin()) {
 
 ?>
 
-<div class=presentation>
+<div class=detail>
 
         <form id="myForm" method="get" action="./index.php?controller=produit&action=ajoutPanier&">
 
