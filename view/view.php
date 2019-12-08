@@ -21,26 +21,26 @@
 		<div class=menu_burger>
 			<a> <img class = "responsive-img" src="./Images/logo.png " alt="Ca fonctionne pas nulos" id="logobg"></a>
 			<div class="submenu_bg">
-				<div><a class=txt_sub href="index.php">Accueil</a></div>
+				<div><a class=ctg_menu_burger href="index.php">Accueil</a></div>
 				<br>
-				<div><a class=txt_sub href="index.php?action=readAll&controller=produit">Produits</a></div>
-				<div><a class=txt_sub href="index.php?action=show_panier&controller=utilisateur1">Panier</a></div>
+				<div><a class=ctg_menu_burger href="index.php?action=readAll&controller=produit">Produits</a></div>
+				<div><a class=ctg_menu_burger href="index.php?action=show_panier&controller=utilisateur1">Panier</a></div>
 				<?php
 				if(Session::is_admin()) {
-					echo '<div><a class=txt_sub href="index.php?action=readAll&controller=utilisateur1">Utilisateurs</a></div>
-					<div><a class=txt_sub href="index.php?action=readAll&controller=commande">Historique des commandes</a></div>';
+					echo '<div><a class=ctg_menu_burger href="index.php?action=readAll&controller=utilisateur1">Utilisateurs</a></div>
+					<div><a class=ctg_menu_burger href="index.php?action=readAll&controller=commande">Historique des commandes</a></div>';
 				}
 				else if (isset($_SESSION['loginUtilisateur'])){
-					echo '<div><a class=txt_sub href="index.php?action=read&controller=utilisateur1&loginUtilisateur='.$_SESSION['loginUtilisateur'].'">Mon Compte</a></div>
-					<div><a class=txt_sub href="index.php?action=readAll&controller=commande">Historique des commandes</a></div>';
+					echo '<div><a class=ctg_menu_burger href="index.php?action=read&controller=utilisateur1&loginUtilisateur='.$_SESSION['loginUtilisateur'].'">Mon Compte</a></div>
+					<div><a class=ctg_menu_burger href="index.php?action=readAll&controller=commande">Historique des commandes</a></div>';
 				}
 
 				if(isset($_SESSION['loginUtilisateur'])) {
-					echo ('<div><a class=txt_sub href="index.php?controller=utilisateur1&action=deconnect">Se déconnecter</a></div>');
+					echo ('<div><a class=ctg_menu_burger href="index.php?controller=utilisateur1&action=deconnect">Se déconnecter</a></div>');
 				}
 				else {
-					echo ('<div><a class=txt_sub href="index.php?action=create&controller=utilisateur1">S\'inscrire</a></div>
-						<div><a class=txt_sub href="index.php?action=connect&controller=utilisateur1">Se connecter</a></div>');
+					echo ('<div><a class=ctg_menu_burger href="index.php?action=create&controller=utilisateur1">S\'inscrire</a></div>
+						<div><a class=ctg_menu_burger href="index.php?action=connect&controller=utilisateur1">Se connecter</a></div>');
 				}
 				?>
 			</div>
@@ -55,32 +55,32 @@
 
 			if(Session::is_admin()) {
 
-				echo '<div class=title_menu><a class=txt_menu_admin >Mode Admin</a></div>';
+				echo '<div class=titre_section><a class=ctg_nav_admin >Mode Admin</a></div>';
 
 
 			}
 
 			?>
 
-			<div class=title_menu><a class=txt_menu href="index.php?action=readAll&controller=produit">Produits</a></div>
-			<div class=title_menu><a class=txt_menu href="index.php?action=show_panier&controller=utilisateur1">Panier</a></div>
+			<div class=titre_section><a class=ctg_nav href="index.php?action=readAll&controller=produit">Produits</a></div>
+			<div class=titre_section><a class=ctg_nav href="index.php?action=show_panier&controller=utilisateur1">Panier</a></div>
 			<?php
 
 
 			if(Session::is_admin()) {
 
-				echo '<div class=title_menu><a class=txt_menu href="index.php?action=readAll&controller=utilisateur1">Gestion utilisateurs</a></div>';
+				echo '<div class=titre_section><a class=ctg_nav href="index.php?action=readAll&controller=utilisateur1">Gestion utilisateurs</a></div>';
 
 			}
 
 			if(isset($_SESSION['loginUtilisateur'])){
-				echo '<div class=title_menu><a class=txt_menu href="index.php?action=read&controller=utilisateur1&loginUtilisateur='.$_SESSION['loginUtilisateur'].'">Mon Compte</a></div>
-				<div class=title_menu><a class=txt_menu href="index.php?action=readAll&controller=commande">Historique des commandes</a></div>';
+				echo '<div class=titre_section><a class=ctg_nav href="index.php?action=read&controller=utilisateur1&loginUtilisateur='.$_SESSION['loginUtilisateur'].'">Mon Compte</a></div>
+				<div class=titre_section><a class=ctg_nav href="index.php?action=readAll&controller=commande">Historique des commandes</a></div>';
 				
-				echo ('<div class=title_menu><a class=txt_menu href="index.php?controller=utilisateur1&action=deconnect">Se déconnecter</a></div>');
+				echo ('<div class=titre_section><a class=ctg_nav href="index.php?controller=utilisateur1&action=deconnect">Se déconnecter</a></div>');
 			}else {
-				echo ('<div class=title_menu><a class=txt_menu href="index.php?action=create&controller=utilisateur1">S\'inscrire</a></div>
-					<div class=title_menu><a class=txt_menu href="index.php?action=connect&controller=utilisateur1">Se connecter</a></div>');
+				echo ('<div class=titre_section><a class=ctg_nav href="index.php?action=create&controller=utilisateur1">S\'inscrire</a></div>
+					<div class=titre_section><a class=ctg_nav href="index.php?action=connect&controller=utilisateur1">Se connecter</a></div>');
 			}
 			?>
 			<form class ="search" method="GET">
