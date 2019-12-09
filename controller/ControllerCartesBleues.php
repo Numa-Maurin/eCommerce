@@ -48,7 +48,7 @@ class ControllerCartesBleues {
 			if(Session::is_user($_GET['loginUtilisateur']) || Session::is_admin() ){
                     $u = ModelCartesBleues::select($_GET['code']);
                     if ($u){
-                        $view="Recard";
+                        $view="recard";
                         $pagetitle = 'Reinsertion';
                         require (File::build_path(array('view', 'view.php')));
 

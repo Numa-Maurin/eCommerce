@@ -303,7 +303,7 @@ class ControllerUtilisateur1 {
             foreach ($tab as $u){
                 if ($_GET['loginUtilisateur'] == $u->get('loginUtilisateur')){
                     $type = 'Inscription';
-                    $view = 'Reconnect';
+                    $view = 'reconnect';
                     $pagetitle = 'Try Again';
                     require (File::build_path(array('view', 'view.php')));
                 }
