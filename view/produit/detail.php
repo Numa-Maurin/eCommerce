@@ -15,7 +15,7 @@ if(Session::is_admin()) {
 
 <div class=detail>
 
-        <form id="myForm" method="get" action="./index.php?controller=produit&action=ajoutPanier&">
+        <form id="formdetail" method="get" action="./index.php?controller=produit&action=ajoutPanier&">
 
          
             <input type="hidden" name="codeProduit" value= <?php echo '"' . htmlspecialchars($p->get("codeProduit")) . '"' ?>>
@@ -33,7 +33,7 @@ if(Session::is_admin()) {
 
             } else{
 
-                echo '<a class="bouton_panier" onclick="document.getElementById(\'myForm\').submit()">Ajouter au panier</a>' ;
+                echo '<a class="bouton_panier" onclick="document.getElementById(\'formdetail\').submit()">Ajouter au panier</a>' ;
             }
 
             ?>
