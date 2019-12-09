@@ -478,16 +478,6 @@ p{
 	color:lightseagreen;
 	font-size:16px;
 }
-/* Composition page produit */
-
-.txt_produit {
-	padding-top:100px;
-	text-align:center;
-	padding:20px 80px;
-	max-height: 209px;
-    min-height: 209px;
-}
-
 footer {
 	background-color:#1C1C1C;
 
@@ -509,30 +499,6 @@ footer>div{
 
 }
 
-#bouton_form{
-
-	float:right;
-}
-
-.div_cb{
-	margin-bottom:20px;
-	text-align: center;
-	background-color:cornflowerblue;
-	border-radius:10px;
-	padding:10px;
-}
-
-.bloc>div>h3 {
-	margin-top:20px;
-	margin-bottom:20px;
-	font-size:40px;
-}
-
-.bloc>div>h4 {
-	font-size:20px;
-}
-
-
 @media(max-width:1200px) {
 	#nous_rejoindre>div.bloc{
 			flex-direction:column;
@@ -549,7 +515,6 @@ footer>div{
 		height:100%;
 		
 	}
-
 }
 
 .icon{

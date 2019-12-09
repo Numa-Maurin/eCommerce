@@ -1,5 +1,3 @@
-
-
 <h1><?php echo $type?> de produit</h1>
 <form method="get" action="index.php" id="form_update_create">
   
