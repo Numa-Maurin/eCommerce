@@ -250,31 +250,13 @@ width:100%;
 }
 
 
-/*
-Les principaux textes
-*/
 
-h6{
-	font-size:22px;
-	margin:0px;
-	font-family:helvetica;
-}
 
-h4{
-	font-size:40px;
-	font-family:arial;
-	margin:0px;
-}
 
-h5{
-	font-size:22px;
-	text-align:center;
-	font-family:helvetica;
-}
 
 h1{
 	font-family:arial;
-	font-size:48px;
+	font-size:45px;
 	margin-bottom:40px;
 	text-align:center;
 }
@@ -284,17 +266,16 @@ h2 {
 	text-align:center;
 }
 
-/*
-Les différentes images
-*/
-
-#img1{
-width:523px;
-height:607px;
-margin:auto;
+h4{
+	font-size:38px;
+	font-family:arial;
+	margin:0px;
 }
 
+/*
+Les différentes images
 
+*/
 #logo{ /*Le logo du menu normal*/
 width:30px;
 height:43px;
@@ -311,50 +292,33 @@ height:43px;
 	height:75px;
 
 }
-@media(max-width:800px){ /*Taille des images et des titres en fonction de la largeur de l'écran */
-	#img1,.img2,.img3,#img4,#img5{
-		height:100%;
-		width:75%;
-	}
-	
-	.img13{
-		width:100%;
-	}
-		#img10{
-		width:350px;
-		height:450px;
-	}
-	
+@media(max-width:800px){
 	h1{
 font-size:28px;
 	}
-	
+
 	h4{
 font-size:24px;
 	}
-	
-	h6{
-		font-size:16px;
-	}
 }
-@media(max-width:1200px){ /*Taille des textes en fonction de la largeur de l'écran */
+@media(max-width:1200px){
 	h2{
 		font-size:20px;
 	}
-	
+
 	h1{
-		
+
 				font-size:36px;
 	}
 
 }
 
-@media(max-width:800px){ /*Taille des textes en fonction de la largeur de l'écran */
-	
+@media(max-width:800px){
+
 	h2{
 		font-size:22px;
 	}
-	
+
 }
 
 .bouton {
@@ -373,17 +337,6 @@ font-size:24px;
 	background-color:#cc1515;;
 	transition-duration:0.5s;
 }
-
-.bouton2{
-	padding:10px;
-	color:white;
-	border-radius: 5px;
-	background-color:#2F4F8A;;
-	transition-duration:0.5s;
-	cursor:pointer;
-}
-
-
 
 .bouton_panier{
 
@@ -535,46 +488,6 @@ p{
     min-height: 209px;
 }
 
-/*
-@media(max-width:800px){ /*Taille des images et des textes en fonction de la largeur de l'écran *//*
-	.produit2{
-		display: flex;
-		flex-direction:column;
-		height:1304px;
-		width:100%;
-		text-align:center;
-		min-height:1304px;
-		max-height:1304px;
-	}
-	
-	.produit2>div{
-			width:100%;
-			height:50%;
-			min-height:714.5px;
-			max-height:714.5px;
-			padding-top:70px;
-	}
-	
-		.img7{
-			display:none;
-	}
-	
-	#img7{
-		display:block;
-		width:465.5px;
-		height:457.5px;
-		margin:auto;
-		padding:373px 0px 0px 0px;
-	}
-		
-}
-
-@media(max-width:1300px){
-	.produit3{
-		height:970px;
-	}
-}
-*/
 footer {
 	background-color:#1C1C1C;
 
