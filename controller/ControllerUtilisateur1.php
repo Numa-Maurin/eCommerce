@@ -304,7 +304,7 @@ class ControllerUtilisateur1 {
                 if ($_GET['loginUtilisateur'] == $u->get('loginUtilisateur')){
                     $type = 'Inscription';
                     $view = 'reconnect';
-                    $pagetitle = 'Try Again';
+                    $pagetitle = 'Réessayez';
                     require (File::build_path(array('view', 'view.php')));
                 }
             }
