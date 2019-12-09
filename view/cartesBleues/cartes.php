@@ -6,8 +6,6 @@
 
 	foreach ($tab_cartes as $carte) {
 		
-	
-
 		echo '
 			<div class="div_cb">
 				<h2>Carte N°'. htmlspecialchars($i) .'</h2>
