@@ -13,6 +13,6 @@
 
 
     </p>
-    <meta http-equiv="refresh" content="3; URL=index.php" />';
+    <meta http-equiv="refresh" content="3;URL=index.php" />';
 
 ?>

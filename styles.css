@@ -163,6 +163,12 @@ div.desc {
 	text-transform: uppercase;
 }
 
+@media(max-width:1600px){
+	.ctg_nav{
+		font-size: 11px;
+	}
+}
+
 .ctg_nav_admin{
 	color:#ff2020;
 	line-height:2.5em;

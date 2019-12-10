@@ -48,7 +48,7 @@ class ControllerCommande {
                    }
             }
     
-            $view = 'historique';
+            $view = 'list';
             $pagetitle = 'Historique de vos commandes';
             require (File::build_path(array('view', 'view.php')));
   }
