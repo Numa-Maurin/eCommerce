@@ -38,15 +38,14 @@ ul {
 
 .Produit {
 	font-family:arial;
-    border: 1px solid #ccc;
-    margin:0px 10px;
-    transition-duration:0.5s;
+    border: 1px solid #1c1c1c;
+	margin:0px 10px;
+	border-radius: 10px;
+    transition-duration:0.3s;
 }
 
 .Produit:hover {
-    border: 1px solid #777;
-    margin: 0px 15px;
-    background-color: grey;
+    background-color: steelblue;
 }
 
 .Produit img {
