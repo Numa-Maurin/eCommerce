@@ -79,10 +79,7 @@
 
             <br>
             <a class="bouton" href="./">Continuer vos achats sans plus attendre !</a>
-            <a class="bouton_panier" href="./index.php?controller=commande&action=passerCommande&montant='. $montant_total .'">Passer la commande</a>
-            ';
-
-
+            <a class="bouton_panier" href="./index.php?controller=commande&action=passerCommande&montant='. $montant_total .'">Passer la commande</a>';
         }else{
 
             echo '

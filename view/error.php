@@ -102,9 +102,9 @@
 		<div class="footerSocialIcons">
 			<h4 class="">Suivez nous</h4>
 			<div class="social-icons">
-				<a href="https://www.instagram.com/?hl=fr" class="social-icon"> <img class="icon" src="./Images/insta.png" alt="ca marche pas"></i></a>
-				<a href="https://fr-fr.facebook.com/" class="social-icon"> <img class="icon" src="./Images/fb.png" alt="ca marche pas"></i></a>
-				<a href="https://www.twitter.com/" class="social-icon"> <img class="icon"src="./Images/twitter.png" alt="ca marche pas"></i></a>
+				<a href="https://www.instagram.com/?hl=fr" class="social-icon"> <img class="icon" src="./Images/insta.png" alt="ca marche pas"></a>
+				<a href="https://fr-fr.facebook.com/" class="social-icon"> <img class="icon" src="./Images/fb.png" alt="ca marche pas"></a>
+				<a href="https://www.twitter.com/" class="social-icon"> <img class="icon" src="./Images/twitter.png" alt="ca marche pas"></a>
 			</div>
 		</div>
 	</div>
