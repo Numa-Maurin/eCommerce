@@ -13,7 +13,7 @@ class ModelProduit extends Model
     private $descProduit;
     private $stockProduit;
 
-    // Getter générique (pas expliqué en TD)
+    // Getter générique 
     public function get($nom_attribut)
     {
         if (property_exists($this, $nom_attribut))
@@ -21,7 +21,7 @@ class ModelProduit extends Model
         return false;
     }
 
-    // Setter générique (pas expliqué en TD)
+    // Setter générique 
     public function set($nom_attribut, $valeur)
     {
         if (property_exists($this, $nom_attribut))
