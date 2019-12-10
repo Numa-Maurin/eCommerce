@@ -55,6 +55,9 @@ ul {
     height: 270px;
 }
 
+.img_desc{
+	max-width: 250px;
+}
 
 .detail{
 	margin: 0px 184px;
@@ -303,7 +306,6 @@ height:43px;
 .bouton_red {
 	padding:10px;
 	color:white;
-	border-radius: 5px;
 	background-color:#cc1515;;
 	transition-duration:0.5s;
 }
@@ -311,7 +313,6 @@ height:43px;
 .bouton_panier{
 	padding:12px 30px;
 	color:white;
-	border-radius: 5px;
 	background-color:cornflowerblue;
 	transition-duration:0.5s;
 	float: right;
@@ -321,7 +322,6 @@ height:43px;
 .bouton_recherche{
 	padding:1px 15px;
 	color:white;
-	border-radius: 5px;
 	background-color:cornflowerblue;
 	transition-duration:0.5s;
 	float: right;
@@ -335,7 +335,6 @@ height:43px;
 .bouton_panier_disabled{
 	padding:12px 30px;
 	color:white;
-	border-radius: 5px;
 	background-color:grey;
 	transition-duration:0.5s;
 	float: right;
@@ -389,11 +388,17 @@ form {
 	font-family:verdana;
 }
 
+.div_cb{
+	margin-bottom:20px;
+	text-align: center;
+	background-color: cadetblue;
+	padding:10px;
+}
+
 .submit_btn{
 
 	padding:10px;
 	color:white;
-	border-radius: 5px;
 	background-color:#2F4F8A;;
 	transition-duration:0.5s;
 	border:0px;
