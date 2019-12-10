@@ -11,7 +11,7 @@ class ControllerCartesBleues {
 		if (isset($_SESSION['loginUtilisateur'])){
 	
 			$tab_cartes = ModelCartesBleues::selectByUser();
-			$view="cartes";
+			$view="list";
 			$pagetitle = 'Vos cartes bleues enregistrées';
 			require (File::build_path(array('view', 'view.php')));
 			
