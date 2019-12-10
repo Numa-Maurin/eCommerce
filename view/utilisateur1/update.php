@@ -139,7 +139,7 @@
       ?>
     </p>
     <p>
-      <input class="submit_btn" type="submit"value="Enregistrer" />
+      <input class="submit_btn" type="submit" value="Enregistrer" />
     </p>
   </fieldset> 
 </form>

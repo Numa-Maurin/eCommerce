@@ -16,7 +16,7 @@
 
 				echo '
 
-				<div id="ligne_commande">
+				<div class="ligne_commande">
 
 					<a>Commande N° ' . htmlspecialchars($c->get('idCommande')) . ' </a>
 
