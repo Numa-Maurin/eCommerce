@@ -55,6 +55,9 @@ ul {
     height: 270px;
 }
 
+.img_desc{
+	max-width: 250px;
+}
 
 .detail{
 	margin: 0px 184px;
